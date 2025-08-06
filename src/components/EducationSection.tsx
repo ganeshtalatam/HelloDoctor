@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, BookOpen, Globe } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const EducationSection = () => {
   const academicQualifications = [
@@ -79,8 +80,8 @@ const EducationSection = () => {
     <section id="education" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Education & <span className="text-gradient">Credentials</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-navy">
+            Education & <span className="bg-gradient-to-r from-healthcare-blue to-gold bg-clip-text text-transparent">Credentials</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             A comprehensive educational foundation spanning healthcare management, business leadership, 
@@ -145,20 +146,28 @@ const EducationSection = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="animate-scale-in">
-              <div className="text-3xl font-bold text-primary mb-2">5+</div>
-              <div className="text-muted-foreground">Degree Programs</div>
+              <div className="text-3xl font-bold text-navy mb-2">
+                <AnimatedCounter target={5} suffix="+" delay={500} />
+              </div>
+              <div className="text-navy/70">Degree Programs</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <div className="text-muted-foreground">Certifications</div>
+              <div className="text-3xl font-bold text-navy mb-2">
+                <AnimatedCounter target={25} suffix="+" delay={700} />
+              </div>
+              <div className="text-navy/70">Certifications</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
-              <div className="text-muted-foreground">Countries</div>
+              <div className="text-3xl font-bold text-navy mb-2">
+                <AnimatedCounter target={10} suffix="+" delay={900} />
+              </div>
+              <div className="text-navy/70">Countries</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">20+</div>
-              <div className="text-muted-foreground">Institutions</div>
+              <div className="text-3xl font-bold text-navy mb-2">
+                <AnimatedCounter target={20} suffix="+" delay={1100} />
+              </div>
+              <div className="text-navy/70">Institutions</div>
             </div>
           </div>
         </div>

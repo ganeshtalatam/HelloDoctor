@@ -163,7 +163,7 @@ const ContactSection = () => {
           <ScrollReveal direction="right" delay={400}>
             <div className="lg:col-span-2">
               <Card className="hover-lift border-0 bg-white/90 backdrop-blur-sm shadow-xl">
-                <CardHeader className="pb-6">
+                <CardHeader className="pb-6 text-center lg:text-left">
                   <CardTitle className="text-3xl font-bold text-navy">Send a Message</CardTitle>
                   <p className="text-navy/70 leading-relaxed">
                     Fill out the form below and Dr. Panchagnula will respond to your inquiry promptly.

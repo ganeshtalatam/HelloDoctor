@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Building2, Award, Globe, Users, Stethoscope, BookOpen } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
+import AnimatedCounter from './AnimatedCounter';
 
 interface TimelineItem {
   year: string;
@@ -81,8 +82,12 @@ const AnimatedTimeline = () => {
       <div className="container mx-auto px-6">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-healthcare-blue/10 backdrop-blur-sm border border-healthcare-blue/20 rounded-full px-6 py-3 text-sm font-medium mb-6">
+              <Stethoscope className="h-5 w-5 text-healthcare-blue" />
+              <span className="text-healthcare-blue">Professional Mission</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-              Professional Evolution
+              Pioneering Healthcare <span className="bg-gradient-to-r from-healthcare-blue to-gold bg-clip-text text-transparent">Excellence</span>
             </h2>
             <p className="text-xl text-navy/70 max-w-3xl mx-auto leading-relaxed">
               Three decades of transformative leadership in healthcare management, 
@@ -194,12 +199,16 @@ const AnimatedTimeline = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <Users className="h-12 w-12 text-gold mx-auto mb-2" />
-                    <div className="text-2xl font-bold">50+</div>
+                    <div className="text-2xl font-bold">
+                      <AnimatedCounter target={50} suffix="+" delay={500} />
+                    </div>
                     <div className="text-sm text-white/80">Organizations Served</div>
                   </div>
                   <div className="text-center">
                     <Award className="h-12 w-12 text-gold mx-auto mb-2" />
-                    <div className="text-2xl font-bold">30+</div>
+                    <div className="text-2xl font-bold">
+                      <AnimatedCounter target={30} suffix="+" delay={700} />
+                    </div>
                     <div className="text-sm text-white/80">Years Experience</div>
                   </div>
                 </div>
