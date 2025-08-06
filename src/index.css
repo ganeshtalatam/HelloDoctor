@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 20% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 20% 11%;
+
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 210 100% 40%;
+
+    --secondary: 215 25% 97%;
+    --secondary-foreground: 222 20% 11%;
+
+    --muted: 215 25% 97%;
+    --muted-foreground: 222 13% 44%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 92%;
+    --input: 215 20% 92%;
+    --ring: 210 100% 56%;
+
+    /* Modern Professional Healthcare Colors */
+    --navy: 215 80% 15%;
+    --navy-light: 215 60% 25%;
+    --navy-dark: 215 90% 10%;
+    --blue-vivid: 210 100% 56%;
+    --blue-soft: 210 80% 70%;
+    --gold: 43 100% 50%;
+    --gold-light: 43 80% 70%;
+    --coral: 15 85% 65%;
+    --mint: 160 60% 70%;
+    --mint-soft: 160 40% 85%;
+    --charcoal: 222 47% 11%;
+    --white-soft: 0 0% 98%;
+    
+    /* Professional Healthcare Palette */
+    --healthcare-navy: 215 80% 15%;
+    --healthcare-blue: 210 100% 56%;
+    --healthcare-gold: 43 100% 50%;
+    --healthcare-coral: 15 85% 65%;
+    --healthcare-mint: 160 60% 70%;
+    --healthcare-white: 0 0% 100%;
+    --healthcare-charcoal: 222 47% 11%;
+    
+    /* Modern Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 80% 15%) 0%, hsl(210 100% 56%) 50%, hsl(43 100% 50%) 100%);
+    --gradient-navy-blue: linear-gradient(135deg, hsl(215 80% 15%) 0%, hsl(210 100% 56%) 100%);
+    --gradient-blue-gold: linear-gradient(135deg, hsl(210 100% 56%) 0%, hsl(43 100% 50%) 100%);
+    --gradient-coral-mint: linear-gradient(135deg, hsl(15 85% 65%) 0%, hsl(160 60% 70%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-animated: linear-gradient(270deg, hsl(215 80% 15%), hsl(210 100% 56%), hsl(43 100% 50%), hsl(215 80% 15%));
+    --gradient-mesh: radial-gradient(circle at 20% 80%, hsl(210 100% 56% / 0.08) 0%, transparent 50%), 
+                     radial-gradient(circle at 80% 20%, hsl(43 100% 50% / 0.06) 0%, transparent 50%),
+                     radial-gradient(circle at 40% 40%, hsl(215 80% 15% / 0.04) 0%, transparent 50%);
+    
+    /* Enhanced shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(210 100% 56% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(210 100% 56% / 0.12);
+    --shadow-large: 0 8px 32px -8px hsl(210 100% 56% / 0.16);
+    --shadow-glow: 0 0 32px hsl(210 100% 56% / 0.24);
+    
+    /* Fast, Professional Animations */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 12px;
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 215 25% 97%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 215 25% 97%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 215 25% 97%;
+
+    --primary: 210 100% 65%;
+    --primary-foreground: 222 47% 11%;
+    --primary-dark: 210 100% 45%;
+
+    --secondary: 222 20% 15%;
+    --secondary-foreground: 215 25% 97%;
+
+    --muted: 222 20% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 142 76% 45%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 215 25% 97%;
+
+    --border: 222 20% 18%;
+    --input: 222 20% 18%;
+    --ring: 210 100% 65%;
+
+    /* Dark theme adjustments */
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 65%) 0%, hsl(222 47% 15%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11%) 0%, hsl(222 20% 15%) 100%);
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+    --shadow-large: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: var(--gradient-mesh);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Modern animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  .animate-scale-up {
+    animation: scaleUp 0.6s ease-out;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Interactive effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+  }
+  
+  .hover-scale {
+    transition: var(--transition-base);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Button micro-animations */
+  .btn-healthcare {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-healthcare::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-healthcare:hover::before {
+    left: 100%;
+  }
+
+  .btn-healthcare:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  /* Icon animations */
+  .icon-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .icon-pulse {
+    animation: pulse 2s infinite;
+  }
+
+  /* Logo hover effects */
+  .logo-hover {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+  }
+
+  .logo-hover:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+
+  /* Scroll reveal animations */
+  .scroll-reveal.reveal-animate {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+
+  /* Healthcare-specific animations */
+  .pulse-healthcare {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-fill-mode: both;
+  }
+
+  .glow-healthcare {
+    box-shadow: 0 0 20px hsl(var(--healthcare-primary) / 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Navigation enhancements */
+  .nav-item {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-healthcare);
+    transition: width 0.3s ease;
+  }
+
+  .nav-item:hover::after,
+  .nav-item.active::after {
+    width: 100%;
+  }
+
+  /* Background utilities */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .bg-mesh {
+    background-image: var(--gradient-mesh);
+  }
+
+  /* Text utilities */
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass morphism */
+  .glass {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
