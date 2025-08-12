@@ -84,7 +84,7 @@ const EducationSection = () => {
             Education & <span className="bg-gradient-to-r from-healthcare-blue to-gold bg-clip-text text-transparent">Credentials</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive educational foundation spanning healthcare management, business leadership, 
+            A comprehensive educational foundation spanning healthcare management, business leadership,
             and specialized medical domains from prestigious institutions worldwide.
           </p>
         </div>
@@ -147,25 +147,25 @@ const EducationSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="animate-scale-in">
               <div className="text-3xl font-bold text-navy mb-2">
-                <AnimatedCounter target={5} suffix="+" delay={500} />
+                <AnimatedCounter target={5} suffix="+" delay={200} />
               </div>
               <div className="text-navy/70">Degree Programs</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
               <div className="text-3xl font-bold text-navy mb-2">
-                <AnimatedCounter target={25} suffix="+" delay={700} />
+                <AnimatedCounter target={25} suffix="+" delay={300} />
               </div>
               <div className="text-navy/70">Certifications</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-3xl font-bold text-navy mb-2">
-                <AnimatedCounter target={10} suffix="+" delay={900} />
+                <AnimatedCounter target={10} suffix="+" delay={300} />
               </div>
               <div className="text-navy/70">Countries</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
               <div className="text-3xl font-bold text-navy mb-2">
-                <AnimatedCounter target={20} suffix="+" delay={1100} />
+                <AnimatedCounter target={20} suffix="+" delay={300} />
               </div>
               <div className="text-navy/70">Institutions</div>
             </div>
