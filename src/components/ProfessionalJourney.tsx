@@ -48,7 +48,7 @@ const ProfessionalJourney = () => {
       color: "from-orange-500 to-red-600",
       highlights: [
         "Novo Nordisk Strategic Initiatives",
-        "Abbott Healthcare Solutions",
+        "Abbot Healthcare Solutions",
         "Dr. Reddy's Laboratories",
         "Alkem & Gland Pharma Projects",
       ],
@@ -87,7 +87,7 @@ const ProfessionalJourney = () => {
     },
     {
       label: "Years Experience",
-      value: "30+",
+      value: "28+",
       icon: <TrendingUp className="w-6 h-6" />,
     },
   ];
@@ -95,23 +95,38 @@ const ProfessionalJourney = () => {
   const currentBoardPositions = [
     {
       organization: "VVISM-Pharma & Healthcare Management",
-      role: "Industry Advisor",
+      role: "Industry Advisor on Board",
       focus: "Strategic Healthcare Consulting",
     },
     {
-      organization: "Shri Nijalingappa Medical College & HSKRC",
-      role: "Healthcare Advisory Consultant",
+      organization: "Shri Nijalingappa Medical College & HSKRC, Bagalkot",
+      role: "Healthcare Advisory Consultant to the Board",
       focus: "Medical Education Excellence",
     },
     {
-      organization: "NITI Aayog - AIM Healthcare Start-Ups",
-      role: "Entrepreneurial Mentor",
-      focus: "Healthcare Innovation",
+      organization: "NITI Aayog - AIM Healthcare Start-Ups at ALEAP, Hyderabad",
+      role: "Consultant Advisory Entrepreneurial Mentor",
+      focus: "Healthcare Innovation & Startups",
     },
     {
       organization: "Malla Reddy Institute of Health Sciences",
-      role: "Guest Faculty",
+      role: "Guest Faculty & Guest Speaker",
       focus: "Healthcare Management Education",
+    },
+    {
+      organization: "SNMC-Bagalkot",
+      role: "Guest Faculty & Guest Speaker",
+      focus: "Healthcare Management Education",
+    },
+    {
+      organization: "VVISM, Woxsen's University, ASCI, MBU, MRIDS",
+      role: "Guest Faculty/Guest Speaker",
+      focus: "Academic & Professional Development",
+    },
+    {
+      organization: "Government Degree Colleges at Kadapa/Rajahmundry",
+      role: "Guest Faculty/Guest Speaker",
+      focus: "Academic Excellence & Leadership",
     },
   ];
 
@@ -134,12 +149,12 @@ const ProfessionalJourney = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Three Decades of
+            28+ Years of
             <br />
             <span className="text-gradient">Healthcare Excellence</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A transformative journey across all major healthcare sectors, from
+            A transformative journey across all major healthcare sectors spanning 28+ years, from
             pharmaceutical innovation to global advisory roles, consistently
             driving excellence and setting industry standards.
           </p>
@@ -177,9 +192,8 @@ const ProfessionalJourney = () => {
           {journeyPhases.map((phase, index) => (
             <div
               key={index}
-              className={`animate-slide-in ${
-                index % 2 === 0 ? "" : "lg:flex-row-reverse"
-              } flex flex-col lg:flex-row items-center gap-12`}
+              className={`animate-slide-in ${index % 2 === 0 ? "" : "lg:flex-row-reverse"
+                } flex flex-col lg:flex-row items-center gap-12`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Content */}

@@ -41,7 +41,7 @@ const ModernHero = () => {
               </p>
             </div>
             <p className="text-xl leading-relaxed text-white/90 max-w-2xl font-light">
-              Transforming Healthcare Management across 3+ decades. Senior
+              Transforming Healthcare Management across 28+ years. Senior
               Advisory Consultant specializing in Corporate Hospital Management
               and Healthcare Innovation.
             </p>
@@ -79,7 +79,7 @@ const ModernHero = () => {
             </div> */}
             <div className="inline-flex items-center mt-3 gap-2 bg-white border-white rounded-full px-6 py-3 text-sm font-medium animate-glow">
               <Award className="h-5 w-5 text-gold" />
-              <span className="text-gold">30+ Years Healthcare Excellence</span>
+              <span className="text-gold">28+ Years Healthcare Excellence</span>
             </div>
             {/* <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-gold text-navy hover:bg-gold/90 btn-healthcare group text-lg px-8 py-4 font-semibold">

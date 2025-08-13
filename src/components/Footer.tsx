@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Heart } from "lucide-react";
+import { Phone, Mail, MapPin, Heart, LinkedinIcon } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16 justify-between">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="space-y-6 mx-auto">
             <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Senior Advisory Consultant with 30+ years of experience in
+              Senior Advisory Consultant with 28+ years of experience in
               healthcare management, dedicated to advancing healthcare through
               strategic leadership and innovation.
             </p>
@@ -51,6 +51,10 @@ const Footer = () => {
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin size={16} className="text-primary" />
                 <span>Hyderabad, Telangana</span>
+              </div>
+              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <LinkedinIcon size={16} className="text-primary" />
+                <a href="https://www.linkedin.com/in/dr-muralidhar-panchagnula-h-c-06753477/">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -88,27 +92,50 @@ const Footer = () => {
           </div>
 
           {/* Professional Affiliations */}
-          <div className="space-y-6 mx-auto">
+          <div className="space-y-6 mx-auto col-span-2 ">
             <h4 className="font-semibold text-lg">Professional Affiliations</h4>
-            <div className="space-y-4">
-              <Card className="p-4 bg-secondary/50">
-                <p className="text-sm font-medium">ISB Alumni</p>
-                <p className="text-xs text-muted-foreground">
-                  Indian School of Business
-                </p>
-              </Card>
-              <Card className="p-4 bg-secondary/50">
-                <p className="text-sm font-medium">AINU Ethics Committee</p>
-                <p className="text-xs text-muted-foreground">
-                  Social Scientist/Ethicist
-                </p>
-              </Card>
-              <Card className="p-4 bg-secondary/50">
-                <p className="text-sm font-medium">GUIDEPOINT</p>
-                <p className="text-xs text-muted-foreground">
-                  Global Advisors, NY
-                </p>
-              </Card>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4 col-span-1" >
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">ISB Alumni</p>
+                  <p className="text-xs text-muted-foreground">
+                    Indian School of Business
+                  </p>
+                </Card>
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">AINU Ethics Committee</p>
+                  <p className="text-xs text-muted-foreground">
+                    Social Scientist/Ethicist
+                  </p>
+                </Card>
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">GUIDEPOINT</p>
+                  <p className="text-xs text-muted-foreground">
+                    Global Advisors, NY
+                  </p>
+                </Card>
+              </div>
+              <div className="space-y-4 col-span-1">
+
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">NITI Aayog - AIM Healthcare</p>
+                  <p className="text-xs text-muted-foreground">
+                    Start-Ups at ALEAP, Hyderabad
+                  </p>
+                </Card>
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">VVISM-Pharma & Healthcare</p>
+                  <p className="text-xs text-muted-foreground">
+                    Industry Advisor on Board
+                  </p>
+                </Card>
+                <Card className="p-4 bg-secondary/50">
+                  <p className="text-sm font-medium">Shri Nijalingappa Medical College</p>
+                  <p className="text-xs text-muted-foreground">
+                    Healthcare Advisory Consultant to Board
+                  </p>
+                </Card>
+              </div>
             </div>
           </div>
         </div>

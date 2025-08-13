@@ -109,15 +109,14 @@ const ContactSection = () => {
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-4">
                           <div
-                            className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 ${
-                              index === 0
+                            className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 ${index === 0
                                 ? "bg-healthcare-blue/10 text-healthcare-blue"
                                 : index === 1
-                                ? "bg-gold/10 text-gold"
-                                : index === 2
-                                ? "bg-coral/10 text-coral"
-                                : "bg-mint/10 text-mint"
-                            }`}
+                                  ? "bg-gold/10 text-gold"
+                                  : index === 2
+                                    ? "bg-coral/10 text-coral"
+                                    : "bg-mint/10 text-mint"
+                              }`}
                           >
                             {info.icon}
                           </div>
@@ -291,7 +290,25 @@ const ContactSection = () => {
                   <div className="flex items-center space-x-3 group">
                     <div className="w-2 h-2 bg-gold rounded-full group-hover:animate-pulse"></div>
                     <span className="text-sm text-white/90 group-hover:text-white transition-colors">
-                      NITI Aayog - AIM Healthcare
+                      NITI Aayog - AIM Healthcare Start-Ups at ALEAP
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 group">
+                    <div className="w-2 h-2 bg-gold rounded-full group-hover:animate-pulse"></div>
+                    <span className="text-sm text-white/90 group-hover:text-white transition-colors">
+                      VVISM-Pharma & Healthcare Management
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 group">
+                    <div className="w-2 h-2 bg-gold rounded-full group-hover:animate-pulse"></div>
+                    <span className="text-sm text-white/90 group-hover:text-white transition-colors">
+                      Shri Nijalingappa Medical College & HSKRC, Bagalkot
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 group">
+                    <div className="w-2 h-2 bg-gold rounded-full group-hover:animate-pulse"></div>
+                    <span className="text-sm text-white/90 group-hover:text-white transition-colors">
+                      Multiple Academic Institutions as Guest Faculty
                     </span>
                   </div>
                 </div>

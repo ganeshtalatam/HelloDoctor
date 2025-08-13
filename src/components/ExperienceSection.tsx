@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       color: "from-blue-500 to-cyan-500",
       companies: [
         { name: "Novo Nordisk", role: "Healthcare Management", focus: "Diabetes Care & Medical Devices" },
-        { name: "Abbott", role: "Strategic Consultant", focus: "Nutrition & Pharmaceuticals" },
+        { name: "Abbot", role: "Strategic Consultant", focus: "Nutrition & Pharmaceuticals" },
         { name: "Dr. Reddy's Laboratories", role: "Advisory Role", focus: "Generic & Specialty Medicines" },
         { name: "Alkem Laboratories", role: "Management Consultant", focus: "Pharmaceutical Operations" },
         { name: "Gland Pharma", role: "Project Advisor", focus: "Injectable Manufacturing" }
@@ -53,7 +53,7 @@ const ExperienceSection = () => {
     },
     {
       organization: "Shri Nijalingappa Medical College & HSKRC, Bagalkot",
-      role: "Healthcare Advisory Consultant",
+      role: "Healthcare Advisory Consultant to the Board",
       focus: "Medical Education & Healthcare Delivery"
     },
     {
@@ -65,11 +65,36 @@ const ExperienceSection = () => {
       organization: "T-Hub & NiMSME, Hyderabad",
       role: "Guest Faculty & Consultant",
       focus: "Entrepreneurial Mentoring"
+    },
+    {
+      organization: "AIMs/AICs, UOH, O.T.B.I., NITI Aayog - AIM Healthcare Start-Ups at ALEAP, Hyderabad",
+      role: "Consultant Advisory Entrepreneurial Mentor",
+      focus: "Healthcare Innovation & Startups"
+    },
+    {
+      organization: "Malla Reddy Institute of Health Sciences",
+      role: "Guest Faculty & Guest Speaker",
+      focus: "Healthcare Management Education"
+    },
+    {
+      organization: "SNMC-Bagalkot",
+      role: "Guest Faculty & Guest Speaker",
+      focus: "Healthcare Management Education"
+    },
+    {
+      organization: "VVISM, Woxsen's University, ASCI, MBU, MRIDS",
+      role: "Guest Faculty/Guest Speaker",
+      focus: "Academic & Professional Development"
+    },
+    {
+      organization: "Government Degree Colleges at Kadapa/Rajahmundry",
+      role: "Guest Faculty/Guest Speaker",
+      focus: "Academic Excellence & Leadership"
     }
   ];
 
   const achievements = [
-    { number: "30+", label: "Years Experience", icon: <TrendingUp className="h-5 w-5" /> },
+    { number: "28+", label: "Years Experience", icon: <TrendingUp className="h-5 w-5" /> },
     { number: "15+", label: "Major Organizations", icon: <Building2 className="h-5 w-5" /> },
     { number: "500+", label: "Professionals Trained", icon: <Users className="h-5 w-5" /> },
     { number: "25+", label: "Board Positions", icon: <Award className="h-5 w-5" /> }
@@ -83,7 +108,7 @@ const ExperienceSection = () => {
             Professional <span className="text-gradient">Experience</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Three decades of comprehensive experience across all major sectors of the healthcare industry, 
+            28+ years of comprehensive experience across all major sectors of the healthcare industry,
             driving innovation and excellence in medical practice and administration.
           </p>
         </div>
@@ -106,7 +131,7 @@ const ExperienceSection = () => {
         {/* Industry Experience */}
         <div className="space-y-12">
           <h3 className="text-2xl font-semibold text-center mb-8">Industry Experience</h3>
-          
+
           {experienceCategories.map((category, index) => (
             <div key={index} className="animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
               <Card className="hover-lift">
@@ -168,9 +193,9 @@ const ExperienceSection = () => {
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-semibold mb-4">Professional Summary</h3>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                Currently serving as a Senior Advisory Consultant in Healthcare Management, 
-                Trainer/Coach/Mentor, and Guest Faculty to numerous organizations and academic institutes. 
-                Active member of Industry Advisory Boards and Ethics Committees across multiple healthcare corporates, 
+                Currently serving as a Senior Advisory Consultant in Healthcare Management,
+                Trainer/Coach/Mentor, and Guest Faculty to numerous organizations and academic institutes.
+                Active member of Industry Advisory Boards and Ethics Committees across multiple healthcare corporates,
                 contributing to strategic decision-making and ethical healthcare practices.
               </p>
             </CardContent>

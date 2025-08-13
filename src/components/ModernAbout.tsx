@@ -7,6 +7,7 @@ import {
   Lightbulb,
   Globe,
   Heart,
+  Users,
 } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
 
@@ -42,6 +43,38 @@ const ModernAbout = () => {
       description: "International healthcare consulting and strategic guidance",
       icon: <Globe className="w-6 h-6" />,
       color: "from-orange-500 to-orange-600",
+    },
+    {
+      title: "Consultant Advisory Entrepreneurial Mentor",
+      subtitle: "AIMs/AICs, UOH, O.T.B.I., NITI Aayog - AIM Healthcare Start-Ups at ALEAP, Hyderabad",
+      description:
+        "Mentoring healthcare startups and fostering innovation in the healthcare ecosystem",
+      icon: <Lightbulb className="w-6 h-6" />,
+      color: "from-indigo-500 to-indigo-600",
+    },
+    {
+      title: "Industry Advisor on Board",
+      subtitle: "VVISM-Pharma & Healthcare Management",
+      description:
+        "Strategic advisory role in pharmaceutical and healthcare management education",
+      icon: <Building2 className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+    },
+    {
+      title: "Guest Faculty & Speaker",
+      subtitle: "Healthcare Institutes & Academic Institutions",
+      description:
+        "Guest faculty at Malla Reddy Inst. of Health Sciences, SNMC-Bagalkot, VVISM, Woxsen's Univ., ASCI, MBU, MRIDS, Govt. Degree Colleges",
+      icon: <Users className="w-6 h-6" />,
+      color: "from-pink-500 to-pink-600",
+    },
+    {
+      title: "Healthcare Advisory Consultant",
+      subtitle: "Shri Nijalingappa Medical College & HSKRC, Bagalkot",
+      description:
+        "Strategic advisory role in medical education and healthcare delivery excellence",
+      icon: <Heart className="w-6 h-6" />,
+      color: "from-rose-500 to-rose-600",
     },
   ];
 
@@ -81,7 +114,7 @@ const ModernAbout = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A visionary leader with over three decades of transformative
+            A visionary leader with over 28 years of transformative
             experience across all healthcare sectors, driving innovation and
             setting new standards in medical practice and administration.
           </p>
@@ -112,12 +145,32 @@ const ModernAbout = () => {
           </Card>
         </div>
 
+        {/* Professional Objective */}
+        {/* <div className="mb-20 animate-scale-up">
+          <Card className="bg-gradient-to-r from-navy to-healthcare-blue border-0 shadow-xl hover-lift text-white">
+            <CardContent className="p-12 text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-6">Professional Objective</h3>
+              <p className="text-xl text-white/90 leading-relaxed max-w-4xl mx-auto">
+                "TO BE A PART OF DEVELOPMENT IN OTHERS' LIVES WHILE DEVELOPING MYSELF."
+              </p>
+              <div className="mt-8 flex justify-center">
+                <Badge variant="secondary" className="px-6 py-2 text-lg bg-white/20 text-white border-white/30">
+                  Personal Development & Service
+                </Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div> */}
+
         {/* Current Roles Grid */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center mb-12">
-            Current Leadership Positions
+            Positions Held
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {currentRoles.map((role, index) => (
               <Card
                 key={index}
@@ -161,12 +214,12 @@ const ModernAbout = () => {
                       </h4>
                       <p className="text-muted-foreground mb-4">
                         Strategic roles with industry giants including Novo
-                        Nordisk, Abbott, Dr. Reddy's, Alkem, and Gland Pharma,
+                        Nordisk, Abbot, Dr. Reddy's, Alkem, and Gland Pharma,
                         driving innovation and operational excellence.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <Badge variant="secondary">Novo Nordisk</Badge>
-                        <Badge variant="secondary">Abbott</Badge>
+                        <Badge variant="secondary">Abbot</Badge>
                         <Badge variant="secondary">Dr. Reddy's</Badge>
                         <Badge variant="secondary">Alkem</Badge>
                         <Badge variant="secondary">Gland Pharma</Badge>
@@ -258,8 +311,8 @@ const ModernAbout = () => {
               </Card>
               <Card className="bg-primary text-white border-0 shadow-lg hover-lift text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold mb-2">3</div>
-                  <div className="text-sm opacity-90">Decades Experience</div>
+                  <div className="text-3xl font-bold mb-2">28+</div>
+                  <div className="text-sm opacity-90">Years Experience</div>
                 </CardContent>
               </Card>
             </div>
