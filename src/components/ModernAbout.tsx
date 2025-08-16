@@ -46,7 +46,8 @@ const ModernAbout = () => {
     },
     {
       title: "Consultant Advisory Entrepreneurial Mentor",
-      subtitle: "AIMs/AICs, UOH, O.T.B.I., NITI Aayog - AIM Healthcare Start-Ups at ALEAP, Hyderabad",
+      subtitle:
+        "AIMs/AICs, UOH, O.T.B.I., NITI Aayog - AIM Healthcare Start-Ups at ALEAP, Hyderabad",
       description:
         "Mentoring healthcare startups and fostering innovation in the healthcare ecosystem",
       icon: <Lightbulb className="w-6 h-6" />,
@@ -114,9 +115,9 @@ const ModernAbout = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A visionary leader with over 28 years of transformative
-            experience across all healthcare sectors, driving innovation and
-            setting new standards in medical practice and administration.
+            A visionary leader with over 28 years of transformative experience
+            across all healthcare sectors, driving innovation and setting new
+            standards in medical practice and administration.
           </p>
         </div>
 
@@ -300,18 +301,19 @@ const ModernAbout = () => {
             </Card>
 
             {/* Quick Stats */}
-            <div className="mt-8 grid grid-cols-2 gap-6 animate-in">
-              <Card className="bg-primary text-white border-0 shadow-lg hover-lift text-center">
+            <div className="mt-8 gap-6 animate-in justify-center">
+              {/* <Card className="bg-primary text-white border-0 shadow-lg hover-lift text-center">
                 <CardContent className="p-6">
                   <div className="text-3xl font-bold mb-2">
                     <AnimatedCounter target={500} suffix="+" delay={300} />
                   </div>
                   <div className="text-sm opacity-90">Organizations Served</div>
                 </CardContent>
-              </Card>
-              <Card className="bg-primary text-white border-0 shadow-lg hover-lift text-center">
+              </Card> */}
+              <Card className="bg-primary max-w-prose mx-auto text-white border-0 shadow-lg hover-lift text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold mb-2">28+</div>
+                  <AnimatedCounter target={28} suffix="+" delay={300} />
+                  {/* <div className="text-3xl font-bold mb-2">28+</div> */}
                   <div className="text-sm opacity-90">Years Experience</div>
                 </CardContent>
               </Card>
